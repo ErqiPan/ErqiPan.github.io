@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>基于Echarts的中国古代四大发明智慧数据可视化</title>
+    <link rel="stylesheet" href="css/index.css">
+    <script>
+        localStorage.setItem('isFirstLoad', 'true');
+    </script>
+</head>
+
+
+<body>
+    <!-- 雪花容器 -->
+    <div class="snowflakes" id="snowflakes"></div>
+    <div class="mask" id="mask"></div>
+    <div class="container">
+        <!-- 头部背景图和标题 -->
+        <div class="header">
+            <h1>基于Echarts的中国古代四大发明智慧数据可视化</h1>
+        </div>
+        <div class="three-columns">
+            <div class="column-left">
+                <!-- 造纸术导航 -->
+                <div class="nav-container">
+                    <div class="nav-group" data-target="paper">
+                        <a href="Page_1_PM.html" class="nav-item" style="--i:1">传播路线</a>
+                        <a href="Evalution_PM.html" class="nav-item" style="--i:2">发展历程</a>
+                        <a href="Game_PM.html" class="nav-item" style="--i:3">原料组成</a>
+                        <a href="Charts_PM.html" class="nav-item" style="--i:4">现代工业</a>
+                    </div>
+                </div>
+                <!-- 指南针导航 -->
+                <div class="nav-container">
+                    <div class="nav-group" data-target="compass">
+                        <a href="Page_1_CP.html" class="nav-item" style="--i:1">传播路线</a>
+                        <a href="Evalution_CP.html" class="nav-item" style="--i:2">发展历程</a>
+                        <a href="Game_CP.html" class="nav-item" style="--i:3">原料组成</a>
+                        <a href="Charts_CP.html" class="nav-item" style="--i:4">现代工业</a>
+                    </div>
+                </div>
+            </div>
+            <div class="column-middle">
+                <div class="inventions-grid">
+                    <!-- 造纸术 -->
+                    <a href="Page_1_PM.html" class="invention-card" data-nav="paper"><!-- 造纸术网页 -->
+                        <div class="card-frame">
+                            <div class="image-wrapper">
+                                <img src="image/paper-making1.jpg" alt="造纸术">
+                            </div>
+                            <div class="invention-name">造紙術</div>
+                        </div>
+                    </a>
+                    <!-- 印刷术 -->
+                    <a href="Page_1_PT.html" class="invention-card" data-nav="print"><!-- 印刷术网页 -->
+                        <div class="card-frame">
+                            <div class="image-wrapper">
+                                <img src="image/printing.jpg" alt="印刷术">
+                            </div>
+                            <div class="invention-name">印刷術</div>
+                        </div>
+                    </a>
+                    <!-- 指南针 -->
+                    <a href="Page_1_CP.html" class="invention-card" data-nav="compass"><!-- 指南针网页 -->
+                        <div class="card-frame">
+                            <div class="image-wrapper">
+                                <img src="image/compass1.jpg" alt="指南针">
+                            </div>
+                            <div class="invention-name">指南針</div>
+                        </div>
+                    </a>
+                    <!-- 火药 -->
+                    <a href="Page_1_GP.html" class="invention-card" data-nav="gunpowder"><!-- 火药网页 -->
+                        <div class="card-frame">
+                            <div class="image-wrapper">
+                                <img src="image/gunpowder.jpg" alt="火药">
+                            </div>
+                            <div class="invention-name">火藥</div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="column-right">
+                <!-- 印刷术导航 -->
+                <div class="nav-container">
+                    <div class="nav-group" data-target="print">
+                        <a href="Page_1_PT.html" class="nav-item" style="--i:1">传播路线</a>
+                        <a href="Evalution_PT.html" class="nav-item" style="--i:2">发展历程</a>
+                        <a href="Game_PT.html" class="nav-item" style="--i:3">原料组成</a>
+                        <a href="Charts_PT.html" class="nav-item" style="--i:4">现代工业</a>
+                    </div>
+                </div>
+                <!-- 火药导航 -->
+                <div class="nav-container">
+                    <div class="nav-group" data-target="gunpowder">
+                        <a href="Page_1_GP.html" class="nav-item" style="--i:1">传播路线</a>
+                        <a href="Evalution_GP.html" class="nav-item" style="--i:2">发展历程</a>
+                        <a href="Game_GP.html" class="nav-item" style="--i:3">原料组成</a>
+                        <a href="Charts_GP.html" class="nav-item" style="--i:4">现代工业</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 引入 JavaScript 文件 -->
+    <script src="JS/script.js"></script>
+</body>
+
+</html>
